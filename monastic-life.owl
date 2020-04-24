@@ -1,0 +1,227 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/djell/ontologies/2020/2/untitled-ontology-42#"
+     xml:base="http://www.semanticweb.org/djell/ontologies/2020/2/untitled-ontology-42"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://purl.org/nampi/owl/monastic-life">
+        <owl:versionIRI rdf:resource="https://purl.org/nampi/owl/monastic-life/0.0.1"/>
+        <owl:imports rdf:resource="https://purl.org/nampi/owl/core/0.0.3"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://purl.org/nampi/owl/monastic-life#has_elector -->
+
+    <owl:ObjectProperty rdf:about="https://purl.org/nampi/owl/monastic-life#has_elector">
+        <rdfs:subPropertyOf rdf:resource="https://purl.org/nampi/owl/core#has_participant"/>
+        <rdfs:domain rdf:resource="https://purl.org/nampi/owl/monastic-life#election"/>
+        <rdfs:range rdf:resource="https://purl.org/nampi/owl/core#person"/>
+        <rdfs:label xml:lang="en">has elector</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://purl.org/nampi/owl/monastic-life#administration_of_a_religious_community -->
+
+    <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#administration_of_a_religious_community">
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/core#occupation"/>
+        <rdfs:label xml:lang="en">Administration of a relious community</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/nampi/owl/monastic-life#associated_parish_clergy -->
+
+    <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#associated_parish_clergy">
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/core#occupation"/>
+        <rdfs:label xml:lang="en">Associated parish clergy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/nampi/owl/monastic-life#carthusian_order -->
+
+    <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#carthusian_order">
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/monastic-life#religious_community"/>
+        <rdfs:label xml:lang="en">Carthusian order</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/nampi/owl/monastic-life#carthusian_prior -->
+
+    <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#carthusian_prior">
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/monastic-life#rule_of_a_religious_community"/>
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/monastic-life#superior_of_a_religious_community"/>
+        <rdfs:label xml:lang="en">Carthusian prior</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/nampi/owl/monastic-life#carthusian_vicar -->
+
+    <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#carthusian_vicar">
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/monastic-life#administration_of_a_religious_community"/>
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/monastic-life#vice_superior_of_a_religious_community"/>
+        <rdfs:label xml:lang="en">Carthusian vicar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/nampi/owl/monastic-life#cistercian_prior -->
+
+    <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#cistercian_prior">
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/monastic-life#administration_of_a_religious_community"/>
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/monastic-life#vice_superior_of_a_religious_community"/>
+        <rdfs:label xml:lang="en">Cistercian prior</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/nampi/owl/monastic-life#clergy -->
+
+    <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#clergy">
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/core#status"/>
+        <rdfs:label xml:lang="en">Clergy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/nampi/owl/monastic-life#deacon -->
+
+    <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#deacon">
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/monastic-life#clergy"/>
+        <rdfs:label xml:lang="en">Deacon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/nampi/owl/monastic-life#election -->
+
+    <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#election">
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/core#group_status_addition"/>
+        <rdfs:label xml:lang="en">Election</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/nampi/owl/monastic-life#election_of_carthusian_prior -->
+
+    <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#election_of_carthusian_prior">
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/core#occupation_start"/>
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/monastic-life#election"/>
+        <rdfs:label xml:lang="en">Election of carthusian prior</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/nampi/owl/monastic-life#guest_in_a_religious_community -->
+
+    <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#guest_in_a_religious_community">
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/core#status"/>
+        <rdfs:label xml:lang="en">Guest in a religious community</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/nampi/owl/monastic-life#professed_member_of_a_religious_community -->
+
+    <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#professed_member_of_a_religious_community">
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/core#status"/>
+        <rdfs:label xml:lang="en">Professed member of a religious community</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/nampi/owl/monastic-life#profession -->
+
+    <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#profession">
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/core#group_status_addition"/>
+        <rdfs:label xml:lang="en">Profession</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/nampi/owl/monastic-life#religious_community -->
+
+    <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#religious_community">
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/core#group"/>
+        <rdfs:label xml:lang="en">Religious community</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/nampi/owl/monastic-life#rule_of_a_religious_community -->
+
+    <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#rule_of_a_religious_community">
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/core#occupation"/>
+        <rdfs:label xml:lang="en">Rule of a religious community</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/nampi/owl/monastic-life#sacristan -->
+
+    <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#sacristan">
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/core#occupation"/>
+        <rdfs:label xml:lang="en">Sacristan</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/nampi/owl/monastic-life#superior_of_a_religious_community -->
+
+    <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#superior_of_a_religious_community">
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/core#status"/>
+        <rdfs:label xml:lang="en">Superior of a religious community</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/nampi/owl/monastic-life#vicar -->
+
+    <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#vicar">
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/core#occupation"/>
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/core#status"/>
+        <rdfs:label xml:lang="en">Vicar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/nampi/owl/monastic-life#vice_superior_of_a_religious_community -->
+
+    <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#vice_superior_of_a_religious_community">
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/core#status"/>
+        <rdfs:label xml:lang="en">Vice superior of a religious community</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
