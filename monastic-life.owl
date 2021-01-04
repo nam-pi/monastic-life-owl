@@ -43,6 +43,15 @@
     
 
 
+    <!-- https://purl.org/nampi/owl/monastic-life#family -->
+
+    <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#family">
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/core#group"/>
+        <rdfs:label xml:lang="en">Family</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://purl.org/nampi/owl/monastic-life#family_member -->
 
     <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#family_member">
