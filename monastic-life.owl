@@ -17,6 +17,49 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://purl.org/nampi/owl/monastic-life#has_paged_source -->
+
+    <owl:ObjectProperty rdf:about="https://purl.org/nampi/owl/monastic-life#has_paged_source">
+        <rdfs:subPropertyOf rdf:resource="https://purl.org/nampi/owl/core#has_source"/>
+        <rdfs:domain rdf:resource="https://purl.org/nampi/owl/monastic-life#page"/>
+        <rdfs:range rdf:resource="https://purl.org/nampi/owl/monastic-life#paged_source"/>
+        <rdfs:label xml:lang="en">has paged source</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://purl.org/nampi/owl/monastic-life#has_page_number -->
+
+    <owl:DatatypeProperty rdf:about="https://purl.org/nampi/owl/monastic-life#has_page_number">
+        <rdfs:subPropertyOf rdf:resource="https://purl.org/nampi/owl/core#has_xsd_string"/>
+        <rdfs:domain rdf:resource="https://purl.org/nampi/owl/monastic-life#page"/>
+        <rdfs:label xml:lang="en">has page number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -151,6 +194,15 @@
     
 
 
+    <!-- https://purl.org/nampi/owl/monastic-life#manuscript -->
+
+    <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#manuscript">
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/monastic-life#paged_source"/>
+        <rdfs:label xml:lang="en">Manuscript</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://purl.org/nampi/owl/monastic-life#member_with_manual_focus -->
 
     <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#member_with_manual_focus">
@@ -183,6 +235,24 @@
     <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#official">
         <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/core#occupation"/>
         <rdfs:label xml:lang="en">Official</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/nampi/owl/monastic-life#page -->
+
+    <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#page">
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/core#source_location"/>
+        <rdfs:label xml:lang="en">Page</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/nampi/owl/monastic-life#paged_source -->
+
+    <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#paged_source">
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/core#source"/>
+        <rdfs:label xml:lang="en">Paged source</rdfs:label>
     </owl:Class>
     
 
