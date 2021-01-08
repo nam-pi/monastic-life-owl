@@ -194,6 +194,16 @@
     
 
 
+    <!-- https://purl.org/nampi/owl/monastic-life#historic_diocese -->
+
+    <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#historic_diocese">
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/monastic-life#diocese"/>
+        <rdfs:comment xml:lang="en">A diocese that doesn&apos;t exist in this for anymore.</rdfs:comment>
+        <rdfs:label xml:lang="en">Historic diocese</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://purl.org/nampi/owl/monastic-life#manuscript -->
 
     <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#manuscript">
@@ -206,7 +216,7 @@
     <!-- https://purl.org/nampi/owl/monastic-life#member_with_manual_focus -->
 
     <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#member_with_manual_focus">
-        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/core#status"/>
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/monastic-life#community_member"/>
         <rdfs:label xml:lang="en">Member with manual focus</rdfs:label>
     </owl:Class>
     
@@ -215,7 +225,7 @@
     <!-- https://purl.org/nampi/owl/monastic-life#member_with_spiritual_focus -->
 
     <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#member_with_spiritual_focus">
-        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/core#status"/>
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/monastic-life#community_member"/>
         <rdfs:label xml:lang="en">Member with spiritual focus</rdfs:label>
     </owl:Class>
     
@@ -287,7 +297,7 @@
     <!-- https://purl.org/nampi/owl/monastic-life#professed_member -->
 
     <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#professed_member">
-        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/core#status"/>
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/monastic-life#community_member"/>
         <rdfs:label xml:lang="en">Professed member</rdfs:label>
     </owl:Class>
     
@@ -334,6 +344,15 @@
     <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#religious_polity">
         <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/monastic-life#polity"/>
         <rdfs:label xml:lang="en">Religious polity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/nampi/owl/monastic-life#religious_title -->
+
+    <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#religious_title">
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/core#title"/>
+        <rdfs:label xml:lang="en">Religious title</rdfs:label>
     </owl:Class>
     
 
