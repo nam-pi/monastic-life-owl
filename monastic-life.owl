@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://purl.org/nampi/owl/monastic-life">
         <owl:versionIRI rdf:resource="https://purl.org/nampi/owl/monastic-life/0.0.1"/>
-        <owl:imports rdf:resource="https://purl.org/nampi/owl/core/0.0.4"/>
+        <owl:imports rdf:resource="https://purl.org/nampi/owl/core/0.0.5"/>
     </owl:Ontology>
     
 
@@ -107,16 +107,8 @@
     <!-- https://purl.org/nampi/owl/monastic-life#clergy -->
 
     <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#clergy">
-        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/core#status"/>
-        <rdfs:label xml:lang="en">Clergy</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://purl.org/nampi/owl/monastic-life#clergy_occupation -->
-
-    <owl:Class rdf:about="https://purl.org/nampi/owl/monastic-life#clergy_occupation">
         <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/core#occupation"/>
+        <rdfs:subClassOf rdf:resource="https://purl.org/nampi/owl/core#status"/>
         <rdfs:label xml:lang="en">Clergy</rdfs:label>
     </owl:Class>
     
