@@ -36,6 +36,15 @@
     
 
 
+    <!-- https://purl.org/nampi/owl/monastic-life#is_parent -->
+
+    <owl:ObjectProperty rdf:about="https://purl.org/nampi/owl/monastic-life#has_parent">
+        <rdfs:subPropertyOf rdf:resource="https://purl.org/nampi/owl/core#has_participant"/>
+        <rdfs:label xml:lang="en">has parent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
