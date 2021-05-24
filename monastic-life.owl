@@ -8,8 +8,8 @@
      xmlns:core="https://purl.org/nampi/owl/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://purl.org/nampi/owl/monastic-life">
-        <owl:versionIRI rdf:resource="https://purl.org/nampi/owl/monastic-life/0.0.4"/>
-        <owl:imports rdf:resource="https://purl.org/nampi/owl/core/0.0.6"/>
+        <owl:versionIRI rdf:resource="https://purl.org/nampi/owl/monastic-life/0.0.5"/>
+        <owl:imports rdf:resource="https://purl.org/nampi/owl/core/0.0.7"/>
     </owl:Ontology>
     
 
@@ -32,15 +32,6 @@
         <rdfs:domain rdf:resource="https://purl.org/nampi/owl/monastic-life#page"/>
         <rdfs:range rdf:resource="https://purl.org/nampi/owl/monastic-life#paged_source"/>
         <rdfs:label xml:lang="en">has paged source</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://purl.org/nampi/owl/monastic-life#is_parent -->
-
-    <owl:ObjectProperty rdf:about="https://purl.org/nampi/owl/monastic-life#has_parent">
-        <rdfs:subPropertyOf rdf:resource="https://purl.org/nampi/owl/core#has_participant"/>
-        <rdfs:label xml:lang="en">has parent</rdfs:label>
     </owl:ObjectProperty>
     
 
