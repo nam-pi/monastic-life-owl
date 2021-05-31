@@ -8,8 +8,8 @@
      xmlns:core="https://purl.org/nampi/owl/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://purl.org/nampi/owl/monastic-life">
-        <owl:versionIRI rdf:resource="https://purl.org/nampi/owl/monastic-life/0.0.5"/>
-        <owl:imports rdf:resource="https://purl.org/nampi/owl/core/0.0.7"/>
+        <owl:versionIRI rdf:resource="https://purl.org/nampi/owl/monastic-life/0.0.6"/>
+        <owl:imports rdf:resource="https://purl.org/nampi/owl/core/0.0.8"/>
     </owl:Ontology>
     
 
