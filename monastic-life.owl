@@ -8,8 +8,8 @@
      xmlns:core="http://purl.org/nampi/owl/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.org/nampi/owl/monastic-life">
-        <owl:versionIRI rdf:resource="http://purl.org/nampi/owl/monastic-life/0.1.0"/>
-        <owl:imports rdf:resource="http://purl.org/nampi/owl/core/0.1.0"/>
+        <owl:versionIRI rdf:resource="http://purl.org/nampi/owl/monastic-life/0.1.1"/>
+        <owl:imports rdf:resource="http://purl.org/nampi/owl/core/0.1.1"/>
     </owl:Ontology>
     
 
@@ -64,17 +64,6 @@
     
 
 
-    <!-- http://purl.org/nampi/owl/monastic-life#has_paged_source -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/nampi/owl/monastic-life#has_paged_source">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/nampi/owl/core#has_source"/>
-        <rdfs:domain rdf:resource="http://purl.org/nampi/owl/monastic-life#page"/>
-        <rdfs:range rdf:resource="http://purl.org/nampi/owl/monastic-life#paged_source"/>
-        <rdfs:label xml:lang="en">has paged source</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.org/nampi/owl/monastic-life#is_godparent_in -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/nampi/owl/monastic-life#is_godparent_in">
@@ -98,16 +87,6 @@
     <!-- http://purl.org/nampi/owl/core#has_text -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/nampi/owl/core#has_text"/>
-    
-
-
-    <!-- http://purl.org/nampi/owl/monastic-life#has_page_number -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/nampi/owl/monastic-life#has_page_number">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/nampi/owl/core#has_text"/>
-        <rdfs:domain rdf:resource="http://purl.org/nampi/owl/monastic-life#page"/>
-        <rdfs:label xml:lang="en">has page number</rdfs:label>
-    </owl:DatatypeProperty>
     
 
 
@@ -429,15 +408,6 @@
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#official">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#occupation"/>
         <rdfs:label xml:lang="en">Official</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/nampi/owl/monastic-life#page -->
-
-    <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#page">
-        <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#source_location"/>
-        <rdfs:label xml:lang="en">Page</rdfs:label>
     </owl:Class>
     
 
