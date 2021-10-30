@@ -8,8 +8,8 @@
      xmlns:core="http://purl.org/nampi/owl/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.org/nampi/owl/monastic-life">
-        <owl:versionIRI rdf:resource="http://purl.org/nampi/owl/monastic-life/0.1.1"/>
-        <owl:imports rdf:resource="http://purl.org/nampi/owl/core/0.1.1"/>
+        <owl:versionIRI rdf:resource="http://purl.org/nampi/owl/monastic-life/0.2.0"/>
+        <owl:imports rdf:resource="http://purl.org/nampi/owl/core/0.2.0"/>
     </owl:Ontology>
     
 
@@ -525,6 +525,15 @@
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#rule_of_a_community">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#occupation"/>
         <rdfs:label xml:lang="en">Rule of a community</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nampi/owl/monastic-life#unspecified_aspect -->
+
+    <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#unspecified_aspect">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#aspect"/>
+        <rdfs:label xml:lang="en">Unspecified aspect</rdfs:label>
     </owl:Class>
     
 
