@@ -6,10 +6,11 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:core="http://purl.org/nampi/owl/core#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
     <owl:Ontology rdf:about="http://purl.org/nampi/owl/monastic-life">
-        <owl:versionIRI rdf:resource="http://purl.org/nampi/owl/monastic-life/0.2.0"/>
-        <owl:imports rdf:resource="http://purl.org/nampi/owl/core/0.2.0"/>
+        <owl:versionIRI rdf:resource="http://purl.org/nampi/owl/monastic-life/0.3.0"/>
+        <owl:imports rdf:resource="http://purl.org/nampi/owl/core/0.2.1"/>
     </owl:Ontology>
     
 
@@ -303,6 +304,15 @@
     
 
 
+    <!-- http://purl.org/nampi/owl/monastic-life#highly_skilled_professional -->
+
+    <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#highly_skilled_professional">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#occupation"/>
+        <rdfs:label xml:lang="en">Highly skilled professional</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/nampi/owl/monastic-life#historic_diocese -->
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#historic_diocese">
@@ -370,7 +380,7 @@
     <!-- http://purl.org/nampi/owl/monastic-life#monastic_office -->
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#monastic_office">
-        <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#status"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/monastic-life#office"/>
         <rdfs:label xml:lang="en">Monastic office</rdfs:label>
     </owl:Class>
     
@@ -394,10 +404,20 @@
     
 
 
+    <!-- http://purl.org/nampi/owl/monastic-life#office -->
+
+    <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#office">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#occupation"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#status"/>
+        <rdfs:label xml:lang="en">Office</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/nampi/owl/monastic-life#office_in_a_diocese -->
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#office_in_a_diocese">
-        <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#status"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/monastic-life#office"/>
         <rdfs:label xml:lang="en">Office in a diocese</rdfs:label>
     </owl:Class>
     
@@ -453,15 +473,6 @@
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#professed_member_of_a_religious_community">
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/monastic-life#member_of_a_religious_community"/>
         <rdfs:label xml:lang="en">Professed member of a religious community</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/nampi/owl/monastic-life#profession -->
-
-    <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#profession">
-        <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#occupation"/>
-        <rdfs:label xml:lang="en">Profession</rdfs:label>
     </owl:Class>
     
 
@@ -529,6 +540,42 @@
     
 
 
+    <!-- http://purl.org/nampi/owl/monastic-life#rule_of_a_school -->
+
+    <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#rule_of_a_school">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#occupation"/>
+        <rdfs:label xml:lang="en">Rule of a school</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nampi/owl/monastic-life#secular_office -->
+
+    <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#secular_office">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/monastic-life#office"/>
+        <rdfs:label xml:lang="en">Secular office</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nampi/owl/monastic-life#servant -->
+
+    <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#servant">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#occupation"/>
+        <rdfs:label xml:lang="en">Servant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nampi/owl/monastic-life#trade -->
+
+    <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#trade">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#occupation"/>
+        <rdfs:label xml:lang="en">Trade</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/nampi/owl/monastic-life#unspecified_aspect -->
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#unspecified_aspect">
@@ -550,6 +597,7 @@
     <!-- http://purl.org/nampi/owl/monastic-life#visitator -->
 
     <owl:Class rdf:about="http://purl.org/nampi/owl/monastic-life#visitator">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#occupation"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/nampi/owl/core#status"/>
         <rdfs:label xml:lang="en">Visitator</rdfs:label>
     </owl:Class>
